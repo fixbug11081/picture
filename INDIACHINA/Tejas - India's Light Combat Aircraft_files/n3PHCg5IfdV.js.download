@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["SgxtY"]); }
+
+__d("RoomAttachmentButton.react",["ix","React","TetraButton.react","fbicon","unrecoverableViolation"],(function(a,b,c,d,e,f,g){"use strict";var h=b("React");function a(a){a=a.label;if(a==null)throw b("unrecoverableViolation")("Cannot render RoomAttachmentButton with missing label","comet_qp");return h.jsx(b("TetraButton.react"),{icon:b("fbicon")._(g("1383158"),16),label:a,reduceEmphasis:!0})}e.exports=a}),null);

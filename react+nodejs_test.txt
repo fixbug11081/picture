@@ -1,0 +1,48 @@
+React + Node JS Machine Test
+
+Note:*First read out all the task before start. After that architect your task.
+
+1).Create an dummy product list through a json file in your database of your choice.
+
+a product has following attributes:
+product id,
+product name,
+sku code,
+price
+
+Task Elaboration:
+
+A).create a json file with the above product attributes and store it to your desired location.
+B).Now create a node api that will read your saved json file and store data in database.
+
+
+2).Now create a react component that will list out the saved product with product name,sku code,price and an add to cart button with pagination.
+
+Task Elaboration:
+Above task is self-explanatory.
+
+3).Create another component that will render cart quantity items count & a total amount with a link to cart list.This component is visible to both cart list and product list component.
+
+Task Elaboration:
+You have to show total cart item quantity count & Amount to Pay with clickable link that will render cart items added. for example 12($10)
+
+4).Implement add to cart functionality
+
+Task Elaboration:
+Whenever user click the add to cart button then it will be saved to user cart data in database in following manner mentioned below:
+i).If current item not exists in cart then it will be added with default 1 quantity
+ii).If items exists then it must increase existing quantity by 1;
+
+5).Create cart item list component that will show cart items added with following layout
+A).Product name B).Code C).Quantity input box D).Unit Price E).Sub Total
+
+After the list there will be Grand Total Row which will display price sum of all the products.
+
+6).Update the cart items quantity with validation according to user input with socket synchronization
+
+Task Elaboration:
+
+i).First validate the quantity should be greater than zero. If everything is fine then update the only cart item that was updated.Also update Grand Total.
+ii).Use socket to synchronize cart items between different devices/browser tabs.
+iii).Cart Data should also be synchronized with database.
+
